@@ -58,8 +58,8 @@ int main(int argc, char *argv[]) {
         printf("========================================================\n");
         printf("      DESAFIO TETRIS STACK - Seleção de Nível\n");
         printf("========================================================\n");
-        printf("1.   Fila de Peças (Future Queue)\n");
-        printf("2.   Fila + Pilha de Reserva (Hold Stack)\n");
+        printf("1.   Fila de Peças \n");
+        printf("2.   Fila + Pilha de Reserva \n");
         printf("3.   Fila + Pilha + Estratégia Avançada\n");
         printf("0. Sair\n");
         printf("Escolha o modo: ");
@@ -91,11 +91,11 @@ void modo_novato() {
     
     do {
         limparTela();
-        printf("--- MODO NOVATO: Fila de Peças Futuras ---\n");
+        printf("---  Fila de Peças Futuras ---\n");
         exibir_status(&fila, NULL, false); 
         
         printf("\nOpções:\n");
-        printf("1. Jogar Peça (Dequeue + Enqueue Automático)\n");
+        printf("1. Jogar Peça \n");
         printf("0. Voltar ao Menu Principal\n");
         printf("Escolha: ");
 
@@ -134,13 +134,13 @@ void modo_aventureiro() {
     
     do {
         limparTela();
-        printf("--- MODO AVENTUREIRO: Fila e Pilha de Reserva ---\n");
+        printf("---  Fila e Pilha de Reserva ---\n");
         exibir_status(&fila, &pilha, true); 
         
         printf("\nOpções:\n");
-        printf("1. Jogar Peça (Dequeue + Enqueue Automático)\n");
-        printf("2. Reservar Peça da Frente (Push + Enqueue Automático)\n");
-        printf("3. Usar Peça Reservada (Pop)\n");
+        printf("1. Jogar Peça \n");
+        printf("2. Reservar Peça da Frente \n");
+        printf("3. Usar Peça Reservada \n");
         printf("0. Voltar ao Menu Principal\n");
         printf("Escolha: ");
 
@@ -202,7 +202,7 @@ void modo_mestre() {
     
     do {
         limparTela();
-        printf("--- MODO MESTRE: Estratégia Avançada ---\n");
+        printf("--- Estratégia Avançada ---\n");
         exibir_status(&fila, &pilha, true); 
         
         printf("\nOpções:\n");
